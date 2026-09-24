@@ -1,0 +1,6 @@
+{
+  "name": "ChimneyHaven - Clean Chimneys, Safer Homes",
+  "description": "Professional chimney sweeping, safety flue inspections, and fireplace maintenance in Whitefield and Greater Manchester.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
