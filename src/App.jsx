@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { business } from './config/business.js';
 import Navbar from './components/Navbar.jsx';
 import Hero from './components/Hero.jsx';
 import Services from './components/Services.jsx';
@@ -10,10 +11,14 @@ import Contact from './components/Contact.jsx';
 import Footer from './components/Footer.jsx';
 
 /**
- * ChimneyHaven - High-End Home Services & Chimney Care Website
+ * High-End Home Services & Chimney Care Website
  * Built for Whitefield & Greater Manchester
  */
 export default function App() {
+  useEffect(() => {
+    document.title = `${business.name} - ${business.tagline}`;
+  }, []);
+
   return (
     <div className="min-h-screen bg-[var(--color-canvas)] text-[var(--color-text)] flex flex-col selection:bg-[var(--color-secondary)] selection:text-[var(--color-primary)]">
       {/* 1. Header & Navigation */}

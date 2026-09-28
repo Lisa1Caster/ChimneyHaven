@@ -6,10 +6,12 @@
  * A non-technical owner can edit this single configuration file to update the entire website.
  */
 
+const BUSINESS_NAME = "ChimneyHaven";
+
 export const business = {
   // Identity & Core Metadata
-  name: "ChimneyHaven",
-  shortName: "ChimneyHaven",
+  name: BUSINESS_NAME,
+  shortName: BUSINESS_NAME,
   type: "Home Services",
   niche: "Chimney Sweeping & Flue Care",
   tagline: "Clean Chimneys, Safer Homes",
@@ -125,7 +127,7 @@ export const business = {
     eyebrow: "Local Craft & Safety",
     title: "Dedicated chimney care for homes in Whitefield and Greater Manchester.",
     paragraphs: [
-      "Operating from Leonard Curtis House at Elms Square on Bury New Road, ChimneyHaven was founded to give local homeowners dependable, soot-free chimney care. We treat every home with the highest standards of cleanliness, using protective floor sheeting and industrial HEPA extraction so your living room remains immaculate.",
+      `Operating from Leonard Curtis House at Elms Square on Bury New Road, ${BUSINESS_NAME} was founded to give local homeowners dependable, soot-free chimney care. We treat every home with the highest standards of cleanliness, using protective floor sheeting and industrial HEPA extraction so your living room remains immaculate.`,
       "Whether you heat your home with a traditional open fireplace or a modern high-efficiency multi-fuel stove, regular professional sweeping and chimney repairs prevent dangerous creosote build-ups, chimney fires, and water ingress. Every service concludes with a thorough draw test and an official certificate for your household insurance."
     ],
     highlights: [
@@ -313,6 +315,6 @@ export const business = {
   // Footer Details
   footer: {
     note: "Clean chimneys, safer homes. Professional chimney sweeping, CCTV inspections, and masonry repairs across Whitefield and Greater Manchester.",
-    copyright: `© ${new Date().getFullYear()} ChimneyHaven. All rights reserved.`
+    copyright: `© ${new Date().getFullYear()} ${BUSINESS_NAME}. All rights reserved.`
   }
 };
